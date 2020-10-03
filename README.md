@@ -4,7 +4,7 @@
 
 ```npm ci```
 
-``npm test```
+```npm test```
 
 
 In vscode press F5 to debug the tests
