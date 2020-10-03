@@ -1,5 +1,7 @@
 const numLabel = document.getElementById('number');
 
+exports.numLabel = numLabel
+
 const eventHandlers = require('./counter-event-handlers');
 
 document.getElementById('plus').addEventListener('click', () => {
