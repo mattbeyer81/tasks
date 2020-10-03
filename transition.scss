@@ -1,0 +1,22 @@
+.box {
+  margin: 40px auto;
+  background: #005eff;
+  width: 150px;
+  height: 150px;
+  transition: 5s;
+}
+
+.box:hover {
+  animation: rotation 8s ease-in;
+  border-radius: 50%;
+  background: green;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}

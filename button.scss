@@ -1,0 +1,35 @@
+$border1: 2px;
+$border2: 5px;
+$border3: 2px;
+$border4: 2px;
+$borders: $border1 + $border2 + $border3 + $border4;
+$borderRadius: 10px;
+
+a {
+    display: inline-block;
+
+    margin: $borders;
+    padding: 6px 25px 6px 25px;
+
+    background: linear-gradient(0deg, #d0d0d0 50%, #dedede 50%);
+
+    text-align: center;
+
+    font: 600 15pt sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #555555;
+    text-shadow: 0px 0.75px 0px #ffffff;
+
+    border: $border1 solid #8c8c8c;
+    border-radius: $borderRadius;
+    
+    box-shadow: 
+	0 0 0 $border2 #d9d9d9,
+	0 0 0 ($border2 + $border3) #ffffff,
+	0 0 0 ($border2 + $border3 + $border4) #666666;
+
+    &::before, &::after {
+        content: " ★ ";
+    }
+}
