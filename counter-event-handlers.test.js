@@ -1,7 +1,7 @@
-document.body.innerHTML = require('fs').readFileSync('./counter.html').toString();
+document.body.innerHTML = '<div id="foo">1</div>';
 
 const eventHandlers = require('./counter-event-handlers');
-const numLabel = document.getElementById('number');
+const numLabel = document.getElementById('foo');
 
 
 describe('Event handlers', () => {
